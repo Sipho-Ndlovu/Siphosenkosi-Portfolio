@@ -1,0 +1,239 @@
+.contentWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#homeContent {
+    position: relative;
+    display: flex;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+.footer {
+    margin-top: 41vh;
+}
+.paragraphContainer {
+    color: #fff;
+    width: 100%;
+    min-width: 750px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 20vw;
+    margin-right: 2vw;
+    border: #fff solid 5px;
+    padding: 30px;
+}
+.intro, .intro2 {
+    font-size: 2.1rem;
+    margin-top: 1%;
+    left : 20%;
+}
+.p1 {
+    margin-top: 2%;
+}
+.p2 {
+    border-right: #fff solid 4px;
+    animation:
+        cursor .6s step-end infinite alternate;
+}
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+.p1, .p2 {
+    font-size: 1.6rem;
+}
+.imageContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cardBox {
+    width: 100%;
+    height: 35%;
+    top: 65%;
+    right: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f3d4738;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+.imageContainer .card {
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    margin: 30px;
+    cursor: pointer;
+}
+.imageContainer .card .imageBox {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.imageContainer .card .imageBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.imageContainer .card:hover .cardBox {
+    opacity: 1;
+}
+.imageContainer .card::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background: none;
+    top: 0;
+    left: 0;
+    transform: translate(-15px, -15px);
+    border-top: 5px solid #fff;
+    border-left: 5px solid #fff;
+    z-index: -1;  
+    transition: all 0.2s ease-in-out;
+}
+.imageContainer .card::after {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background: none;
+    bottom: 0;
+    right: 0;
+    transform: translate(15px, 15px);
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
+    z-index: -1;  
+    transition: all 0.2s ease-in-out;
+}
+.imageContainer .card:hover:before, .imageContainer .card:hover:after{
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+}
+.imageContainer .card:hover .imageBox img{
+    transform: scale(1.1);
+}
+.dropdowns, .dropdownWrapper, .dropdown2Wrapper  {
+    display: flex;
+    justify-content: center;
+}
+.dropdownWrapper {
+    margin-left: -5%;
+}
+.dropdown2Wrapper {
+    margin-left: 10%;
+}
+.collapsible, .collapsible2 {
+    overflow: hidden;
+    font-weight: 500;
+}
+.collapsible {
+    width: 20vw;
+    max-height: 300px;
+}
+.collapsible2 {
+    width: 30vw;
+    max-height: 300px;
+}
+.collapsible input, .collapsible2 input {
+    display: none;
+}
+.collapsible label, .collapsible2 label {
+    position: relative;
+    font-weight: 600;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    color: #0B2447;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+#expand, #expand2 {
+    content: url(../assets/images/expand_more.svg);
+    display: inline-block;
+    position: absolute;
+    margin-top: -15px;
+    height: 50px;
+    width: 50px;
+    transition: all 0.35 ease;
+}
+#expand {
+    margin-left: 10vw;
+}
+#expand2 {
+    margin-left: 20vw;
+}
+.collapsible input:checked ~ label #expand, .collapsible2 input:checked ~ label #expand2 {
+    transition: all 0.35 ease;
+    transform: rotate(180deg);
+}
+
+.collapsibleText, .collapsible2Text {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.35 ease;
+}
+.collapsible input:checked ~ .collapsibleText, .collapsible2 input:checked ~ .collapsible2Text {
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+    transition: all 0.35 ease;
+}
+.collapsibleText h2, .collapsible2Text h2 {
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color: #0B2447;
+}
+.collapsibleText p, .collapsible2Text p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (max-width: 1536px) {
+    .paragraphContainer {
+      min-width: unset;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .intro,
+    .intro2,
+    .p1,
+    .p2 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    
+    .imageContainer .card {
+      margin: 10px;
+    }
+  
+    .dropdowns {
+      margin-top: 50px;
+    }
+  
+    .collapsible,
+    .collapsible2 {
+      width: 80vw;
+      max-width: 400px;
+    }
+  }

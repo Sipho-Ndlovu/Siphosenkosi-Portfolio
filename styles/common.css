@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'nimbus_monoregular';
+    src: url('/assets/fonts/nimbusmono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    margin: 0%;
+    font-family: 'DejaVu Sans';
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(45deg, #0B2447, #19376D, #576CBC);
+    background-size: 300%, 300%;
+    animation: color 25s ease-in-out infinite;
+}
+@keyframes color {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75%{
+        background-position: 50% 50%;        
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.content{
+    background-size: cover;
+    min-height: 100vh;
+}
+.footer{
+    text-align: center;
+    background-color: #0B2447;
+    padding: 10px;
+    font-size: .75rem;
+    color: #fff;
+}
