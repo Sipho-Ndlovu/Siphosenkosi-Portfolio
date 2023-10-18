@@ -58,7 +58,7 @@ nav ul li a::after {
     height: 3px;
     background: #fff;
     position: absolute;
-    bottom: 0px;
+    bottom: -1px;
     left:0;
     transform: scaleX(0);
     transform-origin: left;
