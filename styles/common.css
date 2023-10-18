@@ -5,9 +5,15 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'DeJaVu_Sans';
+    src: url('/assets/fonts/DejaVuSans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
     margin: 0%;
-    font-family: 'DejaVu Sans';
+    font-family: 'DeJaVu_Sans';
     min-height: 100vh;
     min-width: 100vw;
     background: linear-gradient(45deg, #0B2447, #19376D, #576CBC);
