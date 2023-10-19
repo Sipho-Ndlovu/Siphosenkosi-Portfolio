@@ -6,7 +6,7 @@
 }
 #homeContent {
     position: relative;
-    display: flex;
+    display: inline-flex;
     min-height: 50vh;
     align-items: center;
     justify-content: center;
@@ -16,21 +16,18 @@
 }
 .paragraphContainer {
     color: #fff;
-    width: 100%;
-    min-width: 750px;
+    width: 770px;
+    margin-right: 3vw;
     overflow: hidden;
     white-space: nowrap;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 20vw;
-    margin-right: 2vw;
     border: #fff solid 5px;
     padding: 30px;
 }
 .intro, .intro2 {
     font-size: 2.1rem;
-    margin-top: 1%;
     left : 20%;
 }
 .p1 {
@@ -48,7 +45,6 @@
     font-size: 1.6rem;
 }
 .imageContainer {
-    width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -122,26 +118,21 @@
 .imageContainer .card:hover .imageBox img{
     transform: scale(1.1);
 }
-.dropdowns, .dropdownWrapper, .dropdown2Wrapper  {
-    display: flex;
-    justify-content: center;
-}
-.dropdownWrapper {
-    margin-left: -5%;
-}
-.dropdown2Wrapper {
-    margin-left: 10%;
+.dropdowns  {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 1108px;
 }
 .collapsible, .collapsible2 {
     overflow: hidden;
     font-weight: 500;
 }
 .collapsible {
-    width: 20vw;
+    width: 385px;
     max-height: 300px;
 }
 .collapsible2 {
-    width: 30vw;
+    width: 575px;
     max-height: 300px;
 }
 .collapsible input, .collapsible2 input {
@@ -208,32 +199,3 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-@media (max-width: 1536px) {
-    .paragraphContainer {
-      min-width: unset;
-      padding: 10px;
-      text-align: center;
-    }
-  
-    .intro,
-    .intro2,
-    .p1,
-    .p2 {
-      margin: 0;
-      font-size: 1.5rem;
-    }
-    
-    .imageContainer .card {
-      margin: 10px;
-    }
-  
-    .dropdowns {
-      margin-top: 50px;
-    }
-  
-    .collapsible,
-    .collapsible2 {
-      width: 80vw;
-      max-width: 400px;
-    }
-  }

@@ -1,0 +1,98 @@
+.headingContainer, .paragraphContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.paragraphContainer {
+    align-items: start;
+    width: 730px;
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+    color: #fff;
+    font-size: 1.3rem;
+    flex-wrap: wrap;
+    border: #fff solid 5px;
+    padding: 15px;
+}
+.p2 {
+    border-right: #fff solid 4px;
+    animation:
+        cursor .6s step-end infinite alternate;
+}
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+.linkContainer {
+    display: inline-block;
+    flex-direction: row;
+    width: 330px;
+    justify-content: start;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    border-radius: 6px;
+    margin-left: -400px;
+    background-color: #fff;
+}
+.fa-linkedin {
+    font-size: 3rem;
+    color: #0B2447;
+}
+.fa-linkedin:hover {
+    color: #576CBC;
+}
+.fa-square-github {
+    font-size: 3rem;
+    color: #0B2447;
+}
+.fa-square-github:hover {
+    color: #576CBC;
+}
+.formContainer {
+    position: relative;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 730px;
+    min-height: 300px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .input, .button {
+    resize: none;
+    appearance: none;
+    border: none;
+    font-size: inherit;
+    background: #eee;
+    border-radius: 3px;
+    padding: 1rem;
+    width: 100%;
+  }
+  .input {
+    margin-bottom: 1rem;
+  }
+  .input:focus {
+    outline: 1px solid #576CBC;
+  }
+  .message {
+    resize: none;
+    min-height: 150px;
+  }
+  .button {
+    resize: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #0B2447;
+  }
+  .button:hover {
+    background-color: #576CBC;
+  }
