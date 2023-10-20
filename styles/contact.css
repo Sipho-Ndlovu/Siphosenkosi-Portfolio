@@ -28,7 +28,7 @@
     display: inline-block;
     flex-direction: row;
     width: 330px;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -66,8 +66,8 @@
     margin: 0 auto;
     margin-top: 1rem;
     margin-bottom: 2rem;
-  }
-  .input, .button {
+}
+.input, .button {
     resize: none;
     appearance: none;
     border: none;
@@ -76,23 +76,23 @@
     border-radius: 3px;
     padding: 1rem;
     width: 100%;
-  }
-  .input {
+}
+.input {
     margin-bottom: 1rem;
-  }
-  .input:focus {
+}
+.input:focus {
     outline: 1px solid #576CBC;
-  }
-  .message {
+}
+.message {
     resize: none;
     min-height: 150px;
-  }
-  .button {
+}
+.button {
     resize: none;
     color: #fff;
     cursor: pointer;
     background-color: #0B2447;
-  }
-  .button:hover {
+}
+.button:hover {
     background-color: #576CBC;
-  }
+}

@@ -1,0 +1,21 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Portfolio Page",
+            "shortDescription":"Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, consectetur odio aliquid delectus dolores dolore nobis enim illum placeat iure iste magnam tenetur, corrupti corporis repellendus dolor facilis. Ducimus, ratione.",
+            "image": "../assets/images/portfolioProjectThumbnail.png",
+            "tags": ["Javascript", "HTML", "CSS"]
+        },
+
+        {
+            "id": 2,
+            "title": "TetrisAI",
+            "shortDescription": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, consectetur odio aliquid delectus dolores dolore nobis enim illum placeat iure iste magnam tenetur, corrupti corporis repellendus dolor facilis. Ducimus, ratione.",
+            "image": "../assets/images/cowboy bebop 2.jpg",
+            "tags": ["Python", "Machine Learning"]
+        }
+    ]
+}
